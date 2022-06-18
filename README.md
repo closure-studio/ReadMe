@@ -13,5 +13,9 @@
 
 ## 相关截图
 
-- 登录
 ![Login 图标](https://github.com/closure-studio/ReadMe/blob/main/Login.png "Login")
+![Home 图标](https://github.com/closure-studio/ReadMe/blob/main/Home.jpg "Home")
+![History 图标](https://github.com/closure-studio/ReadMe/blob/main/History.png "History")
+![Info 图标](https://github.com/closure-studio/ReadMe/blob/main/Info.jpg "Info")
+![Config 图标](https://github.com/closure-studio/ReadMe/blob/main/Config.jpg "Config")
+
