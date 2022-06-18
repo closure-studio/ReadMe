@@ -2,8 +2,8 @@
 ## _明日方舟云端托管控制中心_
 
 ## 官方地址
- 稳定版 | [https://arknights.host][PlDb] 
- 开发版 | [https://dev.arknights.host][PlGh] 
+ 稳定版 | [https://arknights.host]
+ 开发版 | [https://dev.arknights.host]
 ## Features
 
 - 云端托管，无需平板，手机等载体
