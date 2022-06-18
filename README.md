@@ -18,4 +18,7 @@
 ![History 图标](https://github.com/closure-studio/ReadMe/blob/main/History.png "History")
 ![Info 图标](https://github.com/closure-studio/ReadMe/blob/main/Info.jpg "Info")
 ![Config 图标](https://github.com/closure-studio/ReadMe/blob/main/Config.jpg "Config")
-
+![Server 图标](https://github.com/closure-studio/ReadMe/blob/main/Server.png "Server")
+## 其他
+ - 可露西尔工作室正在高速迭代开发中，欢迎各位加入与开发 [QQ群 450555868]
+ - 需要技术支持，请加群咨询客服 [QQ群 450555868]
