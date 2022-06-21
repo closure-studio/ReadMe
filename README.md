@@ -23,4 +23,4 @@
 ## 其他
  - 可露希尔工作室正在高速迭代开发中，欢迎各位加入与开发 [QQ群 450555868]
  - 需要技术支持,使用困难，请加群咨询客服 [QQ群 450555868]
- - 友情链接: [审判庭](https://github.com/AegirTech)
+ - 友情链接: [AegirTech](https://github.com/AegirTech)
