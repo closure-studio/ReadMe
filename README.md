@@ -5,6 +5,10 @@
  稳定版 | [https://arknights.host]
  
  开发版 | [https://dev.arknights.host]
+ 
+## 警告
+ 若因账号密码错误无法登录请立刻加群联系管理员
+ 
 ## Features
 
 - 云端托管，无需平板，手机等载体
