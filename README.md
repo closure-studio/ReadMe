@@ -14,7 +14,7 @@
  
  何言先生 | [https://github.com/heyanLE/Closure]
  
- Joe     | [https://baidu.com]
+ Joe     | [https://github.com/joe-vettek/ClosureHelper]
  
 ## 警告
  若因账号密码错误无法登录请立刻加群联系管理员
