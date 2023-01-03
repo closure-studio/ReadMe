@@ -6,6 +6,16 @@
  
  开发版 | [https://dev.arknights.host]
  
+ 安卓APP应用 | [https://github.com/closure-studio/Closure-PRTS]
+ 
+## 第三方应用
+
+ 鸣谢何言先生与Joe先生为可露希尔工作室开发安卓应用
+ 
+ 何言先生 | [https://github.com/heyanLE/Closure]
+ 
+ Joe     | [https://baidu.com]
+ 
 ## 警告
  若因账号密码错误无法登录请立刻加群联系管理员
  
