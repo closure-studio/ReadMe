@@ -35,6 +35,6 @@
 ![Config 图标](https://github.com/closure-studio/ReadMe/blob/main/Config.jpg "Config")
 ![Server 图标](https://github.com/closure-studio/ReadMe/blob/main/Server.png "Server")
 ## 其他
- - 可露希尔工作室正在高速迭代开发中，欢迎各位加入与开发 [QQ群 1345795 450555868]
+ - 可露希尔工作室正在高速迭代开发中，欢迎各位加入与开发 [QQ群 1345795 450555868] [Discord](https://discord.gg/5DyJ4AAX)
  - 需要技术支持,使用困难，请加群咨询客服 [QQ群 1345795 450555868]
  - 友情链接: [AegirTech](https://github.com/AegirTech)
