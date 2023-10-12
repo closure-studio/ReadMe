@@ -1,10 +1,12 @@
 # ArkHost V2 API Document
 
-##Game
+## Game
+
 这次更新整合了一些API，移除了一些旧API，比如geetest和Ocr接口
 
 #### Create Game 创建游戏
 【Path】
+
 https://api.arknights.host/Game 【post】 
 
 【Header】
@@ -31,6 +33,7 @@ https://api.arknights.host/Game 【post】
  在GetGames API会返回该已格式化的账号
 
 【Path】
+
 https://api.arknights.host/Game/Login 【post】 
 
 【Header】
@@ -57,6 +60,7 @@ https://api.arknights.host/Game/Login 【post】
 请注意，与之前的API不同，geetest的极验信息和游戏设置（保留理智，是否自动作战）整合在一起
 
 【Path】
+
 https://api.arknights.host/Game 【get】 
 
 【Header】
@@ -122,7 +126,9 @@ https://api.arknights.host/Game 【get】
 在GetGames API会返回该已格式化的账号
 
 【Path】
+
 https://api.arknights.host/Game/G18XXXX 【post】 
+
 【Header】
 
 `{Authorization:{idServer Token}}`
@@ -154,6 +160,7 @@ https://api.arknights.host/Game/G18XXXX 【post】
  在GetGames API会返回该已格式化的账号
 
 【Path】
+
 https://api.arknights.host/Game 【Delete】 
 
 【Header】
@@ -191,6 +198,7 @@ https://api.arknights.host/Game 【Delete】
 
 
 【Path】
+
 https://api.arknights.host/Game 【Delete】 
 
 【Header】
@@ -253,6 +261,7 @@ type CaptchaInfo struct {
 建议第三次查询offest=1000
 
 【Path】
+
 https://api.arknights.host/Game/Log/:account/:offest 【Get】 
 
 https://api.arknights.host/Game/Log/G18xxxx/500
@@ -282,3 +291,158 @@ https://api.arknights.host/Game/Log/G18xxxx/500
         Content  string    `json:"content"`
     }
 
+## System
+
+这次更新整合了一些API
+
+
+#### Get System Config 获取系统设置 【公开】
+
+【Path】
+
+https://api.arknights.host/System/Config 【get】 
+
+【Header】
+
+
+【Body】
+
+
+
+【Response】
+
+    {
+      "code": "int", // 1 表示成功，0表示失败，
+      "data": "nil",
+      "message": "string"
+    }
+    type SystemConfig struct {
+        IsUnderMaintenance *bool   `json:"isUnderMaintenance"`  是否在进行维护
+        IsDebugMode        *bool   `json:"isDebugMode"`         是否在debug模式
+        Announcement       *string `json:"announcement"`        公告
+        AllowGameLogin     *bool   `json:"allowGameLogin"`      允许游戏登录【未部署】
+        AllowGameCreate    *bool   `json:"allowGameCreate"`     允许创建游戏【未部署】
+        AllowGameUpdate    *bool   `json:"allowGameUpdate"`     允许更新游戏【未部署】
+        AllowGameDelete    *bool   `json:"allowGameDelete"`     允许删除游戏【未部署】
+}
+
+
+#### Get System Ap Cost List 获取名人堂 【公开】
+
+【Path】
+
+https://api.arknights.host/System/ApCostList 【get】 
+
+【Header】
+
+
+【Body】
+
+
+
+【Response】
+
+    {
+      "code": "int", // 1 表示成功，0表示失败，
+      "data": "[]Info",
+      "message": "string"
+    }
+    type Info struct {
+        NickName string          `json:"nickName"`
+        Avatar   Avatar `json:"avatar"`
+        ApCost   int             `json:"apCost"`
+    }
+    type Avatar struct {
+        Type string `json:"type"`
+        ID   string `json:"id"`
+    }
+
+#### Update System Config 更新系统设置
+
+可以传单独的字段
+
+也可以传全部的字段
+
+【Path】
+
+https://api.arknights.host/System/Config 【post】 
+
+【Header】
+
+    {
+    Authorization:{idServer Token}
+    }
+
+【Body】
+
+    {
+        IsUnderMaintenance *bool   `json:"isUnderMaintenance"`  是否在进行维护
+        IsDebugMode        *bool   `json:"isDebugMode"`         是否在debug模式
+        Announcement       *string `json:"announcement"`        公告
+        AllowGameLogin     *bool   `json:"allowGameLogin"`      允许游戏登录【未部署】
+        AllowGameCreate    *bool   `json:"allowGameCreate"`     允许创建游戏【未部署】
+        AllowGameUpdate    *bool   `json:"allowGameUpdate"`     允许更新游戏【未部署】
+        AllowGameDelete    *bool   `json:"allowGameDelete"`     允许删除游戏【未部署】
+    }
+
+
+【Response】
+
+    {
+      "code": "int", // 1 表示成功，0表示失败，
+      "data": "nil",
+      "message": "string"
+    }
+
+
+#### Update System 更新游戏
+
+
+【Path】
+
+https://api.arknights.host/System/GameDataUpdate 【post】 
+
+【Header】
+
+    {
+    Authorization:{idServer Token}
+    }
+
+【Body】
+
+
+【Response】
+
+    {
+      "code": "int", // 1 表示成功，0表示失败，
+      "data": "nil",
+      "message": "string"
+    }
+
+
+#### Get System status 获取运行情况
+
+
+【Path】
+
+https://api.arknights.host/System/Status 【get】 
+
+【Header】
+
+    {
+    Authorization:{idServer Token}
+    }
+
+【Body】
+
+
+【Response】
+
+    {
+      "code": "int", // 1 表示成功，0表示失败，
+      "data": "SystemStatus",
+      "message": "string"
+    }
+    type SystemStatus struct {
+	    GlobalCurrentAp float64 `json:"globalCurrentAp"` // 全局理智
+    }
