@@ -86,14 +86,16 @@ https://api.arknights.host/Game 【get】
     }
 
     type Status struct {
-    	//当前用户状态，-1=登陆失败 0=未开启/未初始化/正在初始化但未登录 1=登录中 2=登陆完成/运行中 3=游戏错误
-    	Account  string `json:"account"` //G18XXXXX B18XXXX
-    	Platform int    `json:"platform"`
-    	UUID     string `json:"uuid"`
-    	Code     int    `json:"code"`
-    	Text     string `json:"text"`
+        //当前用户状态，-1=登陆失败 0=未开启/未初始化/正在初始化但未登录 1=登录中 2=登陆完成/运行中 3=游戏错误
+        Account  string          `json:"account"`
+        Platform int             `json:"platform"`
+        UUID     string          `json:"uuid"`
+        Code     int             `json:"code"`
+        Text     string          `json:"text"`
+        NickName string          `json:"nick_name"`
+        Level    int             `json:"level"`
+        Avatar   gamestat.Avatar `json:"avatar"`
     }
-    
     
     // CaptchaInfo 验证请求信息
     type CaptchaInfo struct {
@@ -350,7 +352,7 @@ https://api.arknights.host/System/ApCostList 【get】
     type Info struct {
         NickName string          `json:"nickName"`
         Avatar   Avatar `json:"avatar"`
-        ApCost   int             `json:"apCost"`
+        AdditionalAPCosts int    `json:"additionalAPCosts"`
     }
     type Avatar struct {
         Type string `json:"type"`
