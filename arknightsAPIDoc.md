@@ -1,8 +1,17 @@
 # ArkHost V2 API Document
 
+这次更新主要内容是分离了auth服务，新增工单服务。
+
+ auth server | [https://github.com/closure-studio/ReadMe/blob/main/idServerAPIDoc.md]
+
+ ticket server | [https://github.com/closure-studio/ReadMe/blob/main/ticketsAPIDoc.md]
+
+
 ## Game
 
-这次更新整合了一些API，移除了一些旧API，比如geetest和Ocr接口
+这次更新整合了一些API，移除了一些旧API，比如geetest和Ocr接口。
+
+请注意，idServer Token 请通过auth server的login api接口获得。
 
 #### Create Game 创建游戏
 【Path】
