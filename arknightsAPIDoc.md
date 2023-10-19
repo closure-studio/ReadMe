@@ -104,6 +104,10 @@ https://api.arknights.host/Game 【get】
         NickName string          `json:"nick_name"`
         Level    int             `json:"level"`
         Avatar   gamestat.Avatar `json:"avatar"`
+        CreatedAt int64           `json:"created_at"` // 该游戏创建的timestamp
+        IsVertify bool            `json:"is_vertify"` // 如果未进行短信sms验证，则只有24小时的试用期。
+
+
     }
     
     // CaptchaInfo 验证请求信息
