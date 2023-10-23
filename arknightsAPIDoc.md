@@ -214,7 +214,7 @@ https://api.arknights.host/Game 【Delete】
 
 【Path】
 
-https://api.arknights.host/Game 【Delete】 
+https://api.arknights.host/Game/Config 【Post】 
 
 【Header】
 
