@@ -299,12 +299,19 @@ https://api.arknights.host/Game/Log/G18xxxx/500
       "message": "string"
     }
 
-    type LogEntry struct {
-        Ts       time.Time `json:"ts"`
-        Name     string    `json:"name"`
-        LogLevel uint8     `json:"logLevel"`
-        Content  string    `json:"content"`
+    type GameLogEntry struct {
+        ID       uint   `gorm:"primaryKey" json:"id"`
+        Ts       int64  `gorm:"type:int8;index" json:"ts"`
+        Name     string `gorm:"type:varchar(32);index" json:"name"`
+        LogLevel uint8  `gorm:"type:smallint" json:"logLevel"`
+        Content  string `gorm:"type:text" json:"content"`
     }
+
+    type GameLog struct {
+        Logs    []*GameLogEntry `json:"logs"`
+        HasMore bool            `json:"hasMore"`
+    }
+
 
 ## System
 
