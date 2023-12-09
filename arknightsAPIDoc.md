@@ -214,7 +214,9 @@ https://api.arknights.host/Game 【Delete】
 
 【Path】
 
-https://api.arknights.host/Game/Config 【Post】 
+https://api.arknights.host/game/config/:gameAccount 【Post】 
+
+https://api.arknights.host/game/config/G189XXXXXX
 
 【Header】
 
@@ -226,7 +228,6 @@ https://api.arknights.host/Game/Config 【Post】
 ```
 
 {
-	Account     string      `json:"account"` // B1831 G1831 【require】
 	Config      *GameConfig  `json:"config"` // 游戏设置 【option】
 	CaptchaInfo *CaptchaInfo `json:"captcha_info"` // geetest验证码 【option】
 	RequireOcr  *bool  `json:"require_ocr"` //要求Ocr识别 【option】
