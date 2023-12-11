@@ -68,8 +68,6 @@ axios.request(config)
 
 ## register 注册
 
-注册功能只允许网页端使用，不允许移动端app使用。
-
 path: <https://passport.arknights.host/api/v1/register>
 
 method: POST
