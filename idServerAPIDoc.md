@@ -23,8 +23,8 @@ header:
 
 body:
 {
-    "Email": "<string, 用户名>",
-    "Password": "<string, 密码>"
+    "email": "<string, 用户名>",
+    "password": "<string, 密码>",
 }
 
 response:
@@ -42,8 +42,8 @@ response:
 
 const axios = require('axios');
 let data = JSON.stringify({
-  "Email": "xxxx@qq.com",
-  "Password": "xxxx"
+  "email": "xxxx@qq.com",
+  "password": "xxxx"
 });
 
 let config = {
@@ -84,6 +84,8 @@ body:
 {
     "Email": "<string, 用户名>",
     "Password": "<string, 密码>"
+    "noise":"<string,noise>",
+    "sign":"<sign,noise>"
 }
 
 response:
@@ -98,10 +100,24 @@ response:
 
 ```javascript
 不想写文档了，自己看代码吧
+
+// 获取noise和sign
+// 导入JavaScript文件
+const script = document.createElement('script');
+script.src = '/assets/skadi.js';
+script.async = true;
+document.body.appendChild(script);
+
+// 请注意，该noise会随着时间而改变。
+const noise = window.idaks.join("");
+const result = await signUp(email, password, window.skadi(email + "&" + password + "&" + noise), noise); // 正确写法
+// const result = await signUp(email, password, window.skadi(email + "&" + password + "&" + window.idaks.join("")), window.idaks.join("")); 错误写法
 const axios = require('axios');
 let data = JSON.stringify({
-  "Email": "563255057111@qq.com",
-  "Password": "123456"
+  "email": "xxxx@qq.com",
+  "password": "xxxx"
+  "noise": "<<noise>>",
+  "sign": "<<sign>>"
 });
 
 let config = {
