@@ -16,8 +16,9 @@ arkQuota 将负责管理游戏的创建，删除与修改密码
 
 只有完成了第一个游戏账号的短信验证才允许添加第二个第三个游戏。
 
-请注意 对于 游戏的创建 删除 和修改密码， 都是使用同一个 api https://registry.closure.setonink.com/api/slots/gameAccount 和同一个 method Post
+请注意，这些API接口使用了geetest或者Google recaptcha 人机验证。
 
+geetest Id: 28c7f25a229441ae14b2a8823d0f1659 关于geetest的demo，请访问本repo的gt4-android-sec.zip
 
 
 获取当前用户的槽位
