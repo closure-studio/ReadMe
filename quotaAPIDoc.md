@@ -16,7 +16,7 @@ arkQuota 将负责管理游戏的创建，删除与修改密码
 
 只有完成了第一个游戏账号的短信验证才允许添加第二个第三个游戏。
 
-```json
+```
 import axios from 'axios';
 
 const options = {
@@ -37,7 +37,7 @@ try {
 ```
 
 创建游戏
-```json
+```
 import axios from 'axios';
 
 const options = {
