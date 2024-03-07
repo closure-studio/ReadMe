@@ -18,7 +18,7 @@ arkQuota 将负责管理游戏的创建，删除与修改密码
 
 请注意，这些API接口使用了geetest或者Google recaptcha 人机验证。
 
-geetest Id: 28c7f25a229441ae14b2a8823d0f1659 关于geetest的文档，请访问 
+geetest Id: 3d50c20b712aaf5c4390a663f1912941 关于geetest的文档，请访问 
 
 https://docs.geetest.com/BehaviorVerification/deploy/client/android
 
