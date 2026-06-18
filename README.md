@@ -2,9 +2,7 @@
 ## _明日方舟arknights云端托管控制中心_
 
 ## 官方地址
- 稳定版 | [https://arknights.host]
- 
- 开发版 | [https://dev.arknights.host]
+ 稳定版 | [https://closure.ltsc.vip]
  
  安卓APP应用 | [https://github.com/closure-studio/Closure-PRTS]
  
